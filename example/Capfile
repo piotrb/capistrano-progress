@@ -1,0 +1,14 @@
+require 'capistrano-progress'
+
+set :user, "vagrant"
+
+role :foo, "1.localhost.tv:2222"
+role :foo, "2.localhost.tv:2222"
+role :foo, "3.localhost.tv:2222"
+role :foo, "4.localhost.tv:2222"
+role :foo, "5.localhost.tv:2222"
+role :foo, "6.localhost.tv:2222"
+
+task :foo, :roles => [:foo] do
+  run_with_progress "/opt/vagrant_ruby/bin/ruby -e 'sleep rand(10)'"
+end
