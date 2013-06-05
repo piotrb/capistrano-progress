@@ -5,7 +5,7 @@
 
 Gem::Specification.new do |s|
   s.name = "capistrano-progress"
-  s.version = "0.0.0"
+  s.version = "0.0.1"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Piotr Banasik"]
@@ -14,12 +14,12 @@ Gem::Specification.new do |s|
   s.email = "piotr.banasik@gmail.com"
   s.extra_rdoc_files = [
     "LICENSE.txt",
-    "README.rdoc"
+    "README.md"
   ]
   s.files = [
     "lib/capistrano-progress.rb",
-    "lib/capistrano/configuration/extensions/actions/invocation/progress.rb",
     "lib/capistrano/progress.rb",
+    "lib/capistrano/progress/configuration/actions/progress.rb",
     "lib/capistrano/progress/parallel_status.rb",
     "lib/capistrano/progress/server_with_roles.rb"
   ]
