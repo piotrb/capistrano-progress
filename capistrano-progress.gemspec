@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Piotr Banasik"]
-  s.date = "2013-06-05"
+  s.date = "2013-06-07"
   s.description = "\n    Adds a new command run_with_progress which shows a table of all the servers which\n    run this command and the progress on each one\n  "
   s.email = "piotr.banasik@gmail.com"
   s.extra_rdoc_files = [
