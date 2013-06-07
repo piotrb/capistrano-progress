@@ -10,5 +10,8 @@ role :foo, "5.localhost.tv:2222"
 role :foo, "6.localhost.tv:2222"
 
 task :foo, :roles => [:foo] do
-  run_with_progress "/opt/vagrant_ruby/bin/ruby -e 'sleep rand(10)'"
+  enable_run_progress
+  run "/opt/vagrant_ruby/bin/ruby -e 'sleep rand(10)'"
+  disable_run_progress
+  run "pwd"
 end
